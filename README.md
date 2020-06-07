@@ -10,7 +10,15 @@ BRAINTREE_PUBLIC=<public key>
 JWT=<secret jwt key>
 MONGO_URI=<mongodb server>
 ```
-
+For server-side scripts
+```bash
+   "client-install": "npm install --prefix client",
+    "start": "node server",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+```
 ## Available Scripts
 
 In the project directory, you can run:
