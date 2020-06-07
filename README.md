@@ -2,6 +2,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  
 [WebSite Link](https://openbook48.herokuapp.com/)
 
+## Required to create .env in main directory 
+`
+BRAINTREE_ID=<merchant id>
+BRAINTREE_PRIVATE=<private key>
+BRAINTREE_PUBLIC=<public key>
+JWT=<secret jwt key>
+MONGO_URI=<mongodb server>
+`
+
 ## Available Scripts
 
 In the project directory, you can run:
